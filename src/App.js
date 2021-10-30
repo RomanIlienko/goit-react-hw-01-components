@@ -12,9 +12,6 @@ import transactions from 'components/Transaction-history/transactions.json';
 export default function App() {
   return (
     <div className="App">
-      <FriendsList
-        friends={friends}
-      />
       <SocialProfile
         name={user.name}
         tag={user.tag}
@@ -27,6 +24,9 @@ export default function App() {
       <Statistics
         title="Upload stats"
         stats={statistics}
+      />
+      <FriendsList
+        friends={friends}
       />
       <Transactions
         items={transactions}

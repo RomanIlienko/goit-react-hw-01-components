@@ -3,8 +3,7 @@ import styles from './FriendsList.module.css';
 function FriendsElement({ id, avatar, name, isOnline }) {
     return (
         <li className={styles.item} key={id}>
-            {}
-            <span className={styles.status}></span>
+            {/* {isOnline ? <span className={styles.online}></span>} : { } */}
             <img
                 className={styles.avatar}
                 src={avatar}

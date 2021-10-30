@@ -18,3 +18,4 @@ function FriendsList({ friends }) {
  
 export default FriendsList
 
+ 
