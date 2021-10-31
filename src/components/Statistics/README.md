@@ -24,8 +24,8 @@
 Компонент должен создавать DOM элемент следующей структуры.
 
 ```html
-<section class="statistics">
-  <h2 class="title">Upload stats</h2>
+<section className="statistics">
+  <h2 className=>Upload stats</h2>
 
   <ul class="stat-list">
     <li class="item">

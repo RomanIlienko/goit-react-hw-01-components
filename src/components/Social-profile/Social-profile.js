@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './SocialProfile.module.css'
 import defaultImage from '../defaultImage.jpg'
 
@@ -15,7 +16,7 @@ export default function SocialProfile({
             <div className={styles.description}>
                 <div className={styles.position_img}>
                 <img
-                    src={avatar}
+                    src={avatar ?? defaultImage}
                     alt={name}
                     className={styles.avatar}
                     />
@@ -43,3 +44,16 @@ export default function SocialProfile({
     )
 }
 
+SocialProfile.propTypes = {
+    props: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+    }),
+  }),
+}

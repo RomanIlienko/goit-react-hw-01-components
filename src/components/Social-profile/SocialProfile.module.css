@@ -2,8 +2,9 @@
     width: 360px;
     margin: 0 auto;
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: #2c88d4;
     box-shadow: -2px 4px 18px -1px rgb(56 112 156 / 17%);
+    border: rgb(11, 98, 230) solid 5px;
 }
 
 .avatar {
@@ -12,7 +13,7 @@
     margin-right: auto;
     margin-bottom: 35px;
     border-radius: 50%;
-    box-shadow: 0 5px 10px 2px rgb(77 29 178 / 20%);
+    box-shadow: 0 5px 10px 2px rgb(77 29 178 / 40%);
 }
 
 .position_img {
@@ -20,7 +21,7 @@
 }
 
 .name {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
@@ -30,19 +31,19 @@
 .tag {
     text-align: center;
     margin-bottom: 10px;
-    color: #6b6f74;
+    color: #071d38;
 }
 
 .location {
     text-align: center;
     margin-bottom: 35px;
-    color: #6b6f74;
+    color: #0a2444;
 }
 
 .stats {
     display: flex;
     justify-content: space-evenly;
-    background-color: #e6eaec;
+    background-color: #8f9ba0;
 }
 
 .wrapper_profile {
@@ -58,7 +59,7 @@
 .label {
     display: block;
     font-size: 16px;
-    color: #6b6f74;
+    color: #08182c;
     margin-bottom: 5px;
     text-shadow: 1px 1px 2px rgb(175, 171, 172);
 }
@@ -66,5 +67,5 @@
 .quantity {
     font-weight: 700;
     font-size: 18px;
-    color: black;
+    color: rgb(18, 4, 71);
 }
