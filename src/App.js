@@ -2,7 +2,7 @@ import './App.css';
 import FriendsList from 'components/FriendsList/FriendsList';
 import SocialProfile from 'components/Social-profile/Social-profile';
 import Statistics from 'components/Statistics/Statistics';
-import Transactions from 'components/Transaction-history/Transactions';
+import TransactionHistory from 'components/Transaction-history/TransactionHistory';
 import friends from './components/FriendsList/friends.json'
 import user from 'components/Social-profile/user.json'
 import statistics from 'components/Statistics/statistical-data.json'
@@ -28,7 +28,7 @@ export default function App() {
       <FriendsList
         friends={friends}
       />
-      <Transactions
+      <TransactionHistory
         items={transactions}
       />
     </div>

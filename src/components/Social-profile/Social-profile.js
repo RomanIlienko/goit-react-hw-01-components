@@ -1,33 +1,45 @@
-function SocialProfile({ name, tag, location, avatar, stats}) {
+import styles from './SocialProfile.module.css'
+import defaultImage from '../defaultImage.jpg'
+
+export default function SocialProfile({
+    name,
+    tag,
+    location,
+    avatar = defaultImage,
+    followers = 'unknown',
+    views = 'unknown',
+    likes = 'unknown'
+    }) {
     return (
-        <div class="profile">
-            <div class="description">
+        <div className={styles.profile}>
+            <div className={styles.description}>
+                <div className={styles.position_img}>
                 <img
-                    src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
-                    alt={avatar}
-                class="avatar"
-                />
-                <p class="name">{name}</p>
-                <p class="tag">@{tag}</p>
-                <p class="location">{location}</p>
+                    src={avatar}
+                    alt={name}
+                    className={styles.avatar}
+                    />
+                </div>
+                <p className={styles.name}>{name}</p>
+                <p className={styles.tag}>@{tag}</p>
+                <p className={styles.location}>{location}</p>
             </div>
 
-            <ul class="stats">
+            <ul className={styles.stats}>
                 <li>
-                    <span class="label">Followers</span>
-                    <span class="quantity">1000</span>
+                    <span className={styles.label}>Followers</span>
+                    <span className={styles.quantity}> {followers}</span>
                 </li>
                 <li>
-                    <span class="label">Views</span>
-                    <span class="quantity">2000</span>
+                    <span className={styles.label}>Views</span>
+                    <span className={styles.quantity}> {views}</span>
                 </li>
                 <li>
-                    <span class="label">Likes</span>
-                    <span class="quantity">3000</span>
+                    <span className={styles.label}>Likes</span>
+                    <span className={styles.quantity}> {likes}</span>
                 </li>
             </ul>
         </div>
     )
 }
 
-export default SocialProfile

@@ -13,7 +13,7 @@
     height: 100px;
     margin-bottom: 10px;
     padding: 5px 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgb(250, 225, 0);
 }
 
 .status {
@@ -25,10 +25,17 @@
 }
 
 .online {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     background-color: rgb(22, 180, 22);
+    margin-right: 20px;
 }
 
 .offline {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     background-color: rgb(216, 46, 46);
 }
 
