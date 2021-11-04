@@ -1,12 +1,12 @@
 import './App.css';
 import FriendsList from 'components/FriendsList/FriendsList';
-import SocialProfile from 'components/Social-profile/Social-profile';
+import SocialProfile from 'components/SocialProfile/Social-profile';
 import Statistics from 'components/Statistics/Statistics';
-import TransactionHistory from 'components/Transaction-history/TransactionHistory';
+import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
 import friends from './components/FriendsList/friends.json'
-import user from 'components/Social-profile/user.json'
+import user from 'components/SocialProfile/user.json'
 import statistics from 'components/Statistics/statistical-data.json'
-import transactions from 'components/Transaction-history/transactions.json';
+import transactions from 'components/TransactionHistory/transactions.json';
 
 
 export default function App() {

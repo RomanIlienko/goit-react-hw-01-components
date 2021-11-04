@@ -4,10 +4,11 @@ import defaultImage from '../defaultImage.jpg'
 
 function FriendsElement({ id, avatar = defaultImage, name, isOnline }) {
     return (
-        <li className={styles.item} key={id}>
-            {isOnline ?
-            (<span className={styles.online + ' ' + styles.online}></span>) :
-            (<span className={styles.online + ' ' + styles.offline}></span>)}
+        <li className={styles.item}>
+            <span
+                className={styles.status}
+                style={{ backgroundColor: isOnline ? 'green' : 'red'}}
+            ></span>
             <img
                 className={styles.avatar}
                 src={avatar}
